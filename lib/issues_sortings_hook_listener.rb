@@ -1,5 +1,5 @@
 class IssuesSortingsHookListener < Redmine::Hook::ViewListener
-  render_on :view_layouts_base_body_bottom, :partial => 'issues_sorting'
+  render_on :view_issues_form_details_bottom, :partial => 'issues_sorting'
 
   def view_layouts_base_html_head(context)
     stylesheet_link_tag('redmine_issues_sorting', :plugin => :redmine_issues_sorting) +
