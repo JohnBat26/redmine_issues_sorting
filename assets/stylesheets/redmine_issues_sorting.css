@@ -1,0 +1,20 @@
+.tablesorter-header {
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+.tablesorter-headerUnSorted {
+    background-image: url("../images/bg.gif");
+
+}
+
+.tablesorter-headerAsc {
+    background-image: url("../images/asc.gif");
+
+}
+
+.tablesorter-headerDesc {
+    background-image: url("../images/desc.gif");
+
+}

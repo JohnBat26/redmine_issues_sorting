@@ -1,0 +1,8 @@
+ru:
+  label_сounts_tasks: "количество"
+  label_tasks_new: "новых"
+  label_tasks_in_progress: "в работе"
+  label_tasks_сlosed: "закрыто"
+  label_tasks_resolved: "решено"
+  label_tasks_reopened: "открыто заново"
+  label_from: "из них"

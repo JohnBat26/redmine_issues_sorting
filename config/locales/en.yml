@@ -1,0 +1,9 @@
+en:
+  label_сounts_tasks: "count"
+  label_tasks_new: "new"
+  label_tasks_in_progress: "in progress"
+  label_tasks_сlosed: "closed"
+  label_tasks_resolved: "resolved"
+  label_tasks_reopened: "reopened"
+  label_from: "of them"
+
