@@ -1,16 +1,15 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        window.I18n =
-        <%= current_translations.to_json.html_safe %>
+
         if ($('#issue_tree .issue.hascontextmenu').length > 0) {
-            $('#issue_tree p strong:contains(' + I18n.label_subtask_plural + ')').append(' (' + I18n.label_сounts_tasks + ' '
+            $('#issue_tree p strong:contains(<%= I18n.t 'label_subtask_plural' %>)').append(' (<%= I18n.t 'label_сounts_tasks' %>   '
             + $('#issue_tree .issue.hascontextmenu').length +
-            ', ' + I18n.label_from + ' ' + I18n.label_tasks_new + ': ' + $('#issue_tree .issue.hascontextmenu > td:contains("New")').length +
-            ', ' + I18n.label_tasks_in_progress + ': ' + $('#issue_tree .issue.hascontextmenu > td:contains("In Progress")').length +
-            ', ' + I18n.label_tasks_resolved + ': ' + $('#issue_tree .issue.hascontextmenu > td:contains("Resolved")').length +
-            ', ' + I18n.label_tasks_сlosed + ': ' + $('#issue_tree .issue.hascontextmenu > td:contains("Closed")').length +
-            ', ' + I18n.label_tasks_reopened + ': ' + $('#issue_tree .issue.hascontextmenu > td:contains("Reopened")').length +
+            ', <%= I18n.t 'label_from' %>  <%= I18n.t 'label_tasks_new' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("New")').length +
+            ', <%= I18n.t 'label_tasks_in_progress' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("In Progress")').length +
+            ', <%= I18n.t 'label_tasks_resolved' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("Resolved")').length +
+            ', <%= I18n.t 'label_tasks_сlosed' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("Closed")').length +
+            ', <%= I18n.t 'label_tasks_reopened' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("Reopened")').length +
             ')');
         }
 
@@ -25,22 +24,22 @@
         });
         $('#subTaskTable tbody').first().before('<thead>' +
         '<th style="display:none">111</th>' +
-        '<th>' + I18n.field_name + '</th>' +
-        '<th>' + I18n.field_status + '</th>' +
-        '<th>' + I18n.field_assigned_to + '</th>' +
-        '<th>' + I18n.field_start_date + '</th>' +
-        '<th>' + I18n.field_due_date + '</th>' +
+        '<th><%= I18n.t 'field_name' %></th>' +
+        '<th><%= I18n.t 'field_status' %></th>' +
+        '<th><%= I18n.t 'field_assigned_to' %></th>' +
+        '<th><%= I18n.t 'field_start_date' %></th>' +
+        '<th><%= I18n.t 'field_due_date' %></th>' +
         '<th style="display:none">progress</th>' +
         '</thead>');
         $('#subTaskTable').tablesorter();
 
         $('#relationsTaskTable tbody').first().before('<thead>' +
         '<th style="display:none">111</th>' +
-        '<th>' + I18n.field_name + '</th>' +
-        '<th>' + I18n.field_status + '</th>' +
-        '<th>' + I18n.field_assigned_to + '</th>' +
-        '<th>' + I18n.field_start_date + '</th>' +
-        '<th>' + I18n.field_due_date + '</th>' +
+        '<th><%= I18n.t 'field_name' %></th>' +
+        '<th><%= I18n.t 'field_status' %></th>' +
+        '<th><%= I18n.t 'field_assigned_to' %></th>' +
+        '<th><%= I18n.t 'field_start_date' %></th>' +
+        '<th><%= I18n.t 'field_due_date' %></th>' +
         '<th style="display:none">progress</th>' +
         '</thead>');
         $('#relationsTaskTable').tablesorter();
