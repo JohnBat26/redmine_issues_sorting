@@ -5,11 +5,11 @@
         if ($('#issue_tree .issue.hascontextmenu').length > 0) {
             $('#issue_tree p strong:contains(<%= I18n.t 'label_subtask_plural' %>)').append(' (<%= I18n.t 'label_сounts_tasks' %>   '
             + $('#issue_tree .issue.hascontextmenu').length +
-            ', <%= I18n.t 'label_from' %>  <%= I18n.t 'label_tasks_new' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("New")').length +
-            ', <%= I18n.t 'label_tasks_in_progress' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("In Progress")').length +
-            ', <%= I18n.t 'label_tasks_resolved' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("Resolved")').length +
-            ', <%= I18n.t 'label_tasks_сlosed' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("Closed")').length +
-            ', <%= I18n.t 'label_tasks_reopened' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("Reopened")').length +
+            ', <%= I18n.t 'label_from' %>  <%= I18n.t 'label_tasks_new' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("(New)")').length +
+            ', <%= I18n.t 'label_tasks_in_progress' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("(In Progress)")').length +
+            ', <%= I18n.t 'label_tasks_resolved' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("(Resolved)")').length +
+            ', <%= I18n.t 'label_tasks_сlosed' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("(Closed)")').length +
+            ', <%= I18n.t 'label_tasks_reopened' %>: ' + $('#issue_tree .issue.hascontextmenu > td:contains("(Reopened)")').length +
             ')');
         }
 
