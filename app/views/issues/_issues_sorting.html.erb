@@ -16,7 +16,7 @@
         $('#issue_tree table.list.issues').attr('id', 'subTaskTable').addClass('tablesorter');
         $('#relations table.list.issues').attr('id', 'relationsTaskTable').addClass('tablesorter');
 
-        var queryString = '.controller-issues.action-show #content table:has(th):not(.attributes)';
+        var queryString = '.controller-issues.action-show #content #issue_tree table:has(th):not(.attributes)';
 
         $(queryString).prepend('<thead></thead>');
         $(queryString).each(function () {
